@@ -1,0 +1,543 @@
+{
+  "summary": {
+    "total_questions": 12,
+    "retrieval_hit_rate": 0.917,
+    "retrieval_relevance": 0.667,
+    "answer_correctness": 0.0,
+    "groundedness": 0.083,
+    "citation_correctness": 0.417,
+    "hallucination_rate": 1.0,
+    "average_latency_ms": 6463.16,
+    "average_tokens": 0
+  },
+  "results": [
+    {
+      "id": "Q01",
+      "question": "What is the Enterprise pricing for 2026?",
+      "type": "straightforward",
+      "difficulty": "easy",
+      "expected_answer": "REPLACE_WITH_EXACT_ANSWER_FROM_PRICING2026",
+      "actual_answer": "The 2026 Enterprise tier is **$109 per seat per month**, with a **25-seat minimum**. It includes a **dedicated CSM** and a **4-hour SLA**.",
+      "retrieval_hit": true,
+      "retrieval_relevance": 0.4,
+      "citation_correctness": 0.4,
+      "answer_correctness": 0,
+      "groundedness": 0,
+      "hallucination": 2,
+      "judge_reason": "Invalid judge response",
+      "latency_ms": 7392.99,
+      "total_tokens": 0,
+      "citations": [
+        {
+          "id": 1,
+          "source": "Sales\\Pricing2026.pdf",
+          "page": 1
+        },
+        {
+          "id": 2,
+          "source": "Sales\\Pricing2026.pdf",
+          "page": 2
+        },
+        {
+          "id": 3,
+          "source": "Sales\\Pricing2025.pdf",
+          "page": 1
+        },
+        {
+          "id": 4,
+          "source": "Sales\\Pricing2025.pdf",
+          "page": 1
+        },
+        {
+          "id": 5,
+          "source": "Sales\\Pricing2025.pdf",
+          "page": 2
+        }
+      ]
+    },
+    {
+      "id": "Q02",
+      "question": "What is the Standard pricing for 2026?",
+      "type": "straightforward",
+      "difficulty": "easy",
+      "expected_answer": "REPLACE_WITH_EXACT_ANSWER_FROM_PRICING2026",
+      "actual_answer": "## OrbitSuite Standard Pricing \u2014 2026\n\nEffective **January 1, 2026**:\n\n| Tier | Price per seat/month | Minimum seats | Support |\n|---|---:|---:|---|\n| Starter | **$32** | 5 | Email, 2-business-day SLA |\n| Professional | **$65** | 10 | Email + chat, next-business-day SLA |\n| Enterprise | **$109** | 25 | Dedicated CSM, 4-hour SLA |\n| Enterprise Plus | **$145** | 100 | Dedicated CSM + TAM, 1-hour SLA |\n\n### Add-ons\n- Advanced Analytics: **+$14/seat/month**\n- Premium Integrations Pack: **+$9/seat/month**\n- Additional sandbox environment: **$275/month**\n- Onboarding and implementation: **starting at $4,500 one-time** for Enterprise and above\n\n### Billing\n- Annual prepaid contracts receive a **15% discount** versus monthly billing.\n- Enterprise Plus requires **annual prepaid billing**.\n- Standard contract term: **12 months**, with auto-renewal.",
+      "retrieval_hit": true,
+      "retrieval_relevance": 0.4,
+      "citation_correctness": 0.4,
+      "answer_correctness": 0,
+      "groundedness": 0,
+      "hallucination": 2,
+      "judge_reason": "Invalid judge response",
+      "latency_ms": 5722.34,
+      "total_tokens": 0,
+      "citations": [
+        {
+          "id": 1,
+          "source": "Sales\\Pricing2025.pdf",
+          "page": 2
+        },
+        {
+          "id": 2,
+          "source": "Sales\\Pricing2026.pdf",
+          "page": 1
+        },
+        {
+          "id": 3,
+          "source": "Sales\\Pricing2026.pdf",
+          "page": 2
+        },
+        {
+          "id": 4,
+          "source": "Sales\\Pricing2025.pdf",
+          "page": 1
+        },
+        {
+          "id": 5,
+          "source": "Sales\\Pricing2025.pdf",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "id": "Q03",
+      "question": "What discounts are available?",
+      "type": "straightforward",
+      "difficulty": "easy",
+      "expected_answer": "REPLACE_WITH_EXACT_ANSWER_FROM_DISCOUNTS",
+      "actual_answer": "Available discounts mentioned are:\n\n- **Annual prepaid pricing:** 15% off monthly billing rates. This is available for all pricing tiers except **Enterprise Plus**, which requires annual prepaid billing.\n- **Employee stock purchase plan:** Employees receive a **15% discount** on shares, with two six-month offering periods per year.",
+      "retrieval_hit": false,
+      "retrieval_relevance": 0.0,
+      "citation_correctness": 0.0,
+      "answer_correctness": 0,
+      "groundedness": 0,
+      "hallucination": 2,
+      "judge_reason": "Invalid judge response",
+      "latency_ms": 5848.32,
+      "total_tokens": 0,
+      "citations": [
+        {
+          "id": 1,
+          "source": "Sales\\Pricing2026.pdf",
+          "page": 2
+        },
+        {
+          "id": 2,
+          "source": "HR\\Benefits.pdf",
+          "page": 2
+        },
+        {
+          "id": 3,
+          "source": "HR\\Benefits.pdf",
+          "page": 1
+        },
+        {
+          "id": 4,
+          "source": "Sales\\Pricing2025.pdf",
+          "page": 1
+        },
+        {
+          "id": 5,
+          "source": "Sales\\Pricing2025.pdf",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "id": "Q04",
+      "question": "Compare Enterprise pricing between 2025 and 2026.",
+      "type": "multi-document",
+      "difficulty": "medium",
+      "expected_answer": "REPLACE_WITH_EXACT_COMPARISON_FROM_BOTH_DOCUMENTS",
+      "actual_answer": "### Enterprise pricing comparison\n\n| Item | 2025 | 2026 | Change |\n|---|---:|---:|---:|\n| Price per seat/month | **$99** | **$109** | **+$10** (about **10.1%**) |\n| Minimum seats | 25 | 25 | No change |\n| Support | Dedicated CSM, 4-hour SLA | Dedicated CSM, 4-hour SLA | No change |\n| Advanced Analytics add-on | $12/seat/month | $14/seat/month | +$2 |\n| Premium Integrations Pack | $8/seat/month | $9/seat/month | +$1 |\n| Additional sandbox | $250/month | $275/month | +$25 |\n| Onboarding package | Starting at $4,000 | Starting at $4,500 | +$500 |\n\nAnnual prepaid contracts continue to receive a **15% discount** in both years. At the 25-seat minimum, the monthly Enterprise subscription rises from **$2,475 in 2025** to **$2,725 in 2026**, an increase of **$250 per month**.",
+      "retrieval_hit": true,
+      "retrieval_relevance": 1.0,
+      "citation_correctness": 1.0,
+      "answer_correctness": 0,
+      "groundedness": 0,
+      "hallucination": 2,
+      "judge_reason": "Invalid judge response",
+      "latency_ms": 7152.16,
+      "total_tokens": 0,
+      "citations": [
+        {
+          "id": 1,
+          "source": "Sales\\Pricing2026.pdf",
+          "page": 1
+        },
+        {
+          "id": 2,
+          "source": "Sales\\Pricing2026.pdf",
+          "page": 2
+        },
+        {
+          "id": 3,
+          "source": "Sales\\Pricing2025.pdf",
+          "page": 1
+        },
+        {
+          "id": 4,
+          "source": "Sales\\Pricing2025.pdf",
+          "page": 1
+        },
+        {
+          "id": 5,
+          "source": "Sales\\Pricing2025.pdf",
+          "page": 2
+        }
+      ]
+    },
+    {
+      "id": "Q05",
+      "question": "How did Standard pricing change from 2025 to 2026?",
+      "type": "multi-document",
+      "difficulty": "medium",
+      "expected_answer": "REPLACE_WITH_EXACT_COMPARISON",
+      "actual_answer": "Standard OrbitSuite list pricing increased from 2025 to 2026:\n\n| Tier | 2025 | 2026 | Change |\n|---|---:|---:|---:|\n| Starter | $29/seat/month | $32 | +$3 (~10.3%) |\n| Professional | $59 | $65 | +$6 (~10.2%) |\n| Enterprise | $99 | $109 | +$10 (~10.1%) |\n\nAdditional changes:\n\n- **Enterprise Plus** was introduced at **$145/seat/month** with a 100-seat minimum.\n- **Advanced Analytics:** $12 \u2192 $14/seat/month.\n- **Premium Integrations Pack:** $8 \u2192 $9/seat/month.\n- **Additional sandbox:** $250 \u2192 $275/month.\n- **Onboarding:** $4,000 \u2192 $4,500, now available for Enterprise and Enterprise Plus.\n- The **15% annual prepayment discount** remained unchanged.",
+      "retrieval_hit": true,
+      "retrieval_relevance": 1.0,
+      "citation_correctness": 1.0,
+      "answer_correctness": 0,
+      "groundedness": 0,
+      "hallucination": 2,
+      "judge_reason": "Invalid judge response",
+      "latency_ms": 8976.7,
+      "total_tokens": 0,
+      "citations": [
+        {
+          "id": 1,
+          "source": "Sales\\Pricing2026.pdf",
+          "page": 1
+        },
+        {
+          "id": 2,
+          "source": "Sales\\Pricing2025.pdf",
+          "page": 2
+        },
+        {
+          "id": 3,
+          "source": "Sales\\Pricing2026.pdf",
+          "page": 2
+        },
+        {
+          "id": 4,
+          "source": "Sales\\Pricing2025.pdf",
+          "page": 1
+        },
+        {
+          "id": 5,
+          "source": "Sales\\Pricing2025.pdf",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "id": "Q06",
+      "question": "Compare the available discounts with the 2026 Enterprise pricing.",
+      "type": "multi-document",
+      "difficulty": "hard",
+      "expected_answer": "REPLACE_WITH_EXACT_ANSWER",
+      "actual_answer": "For **2026 Enterprise**, the list price is **$109 per seat/month**, with a **25-seat minimum**.\n\n| Billing option | Cost at 25 seats | Effective cost |\n|---|---:|---:|\n| Monthly billing | **$2,725/month** | $109/seat/month |\n| Annual prepaid | **$27,795/year** | $2,316.25/month equivalent |\n\nThe annual prepaid option receives a **15% discount**, saving:\n\n- **$408.75 per month equivalent**\n- **$4,905 per year** versus paying monthly for 12 months\n\nThe 2026 rate card does not list any additional general discounts. Enterprise Plus must be annual prepaid, but Enterprise itself may be billed monthly or annually. Add-ons and the one-time onboarding fee are listed separately and are not explicitly identified as discounted.",
+      "retrieval_hit": true,
+      "retrieval_relevance": 0.4,
+      "citation_correctness": 0.4,
+      "answer_correctness": 0,
+      "groundedness": 0,
+      "hallucination": 2,
+      "judge_reason": "Invalid judge response",
+      "latency_ms": 14727.94,
+      "total_tokens": 0,
+      "citations": [
+        {
+          "id": 1,
+          "source": "Sales\\Pricing2026.pdf",
+          "page": 2
+        },
+        {
+          "id": 2,
+          "source": "Sales\\Pricing2026.pdf",
+          "page": 1
+        },
+        {
+          "id": 3,
+          "source": "Sales\\Pricing2025.pdf",
+          "page": 1
+        },
+        {
+          "id": 4,
+          "source": "Sales\\Pricing2025.pdf",
+          "page": 1
+        },
+        {
+          "id": 5,
+          "source": "Sales\\Pricing2025.pdf",
+          "page": 2
+        }
+      ]
+    },
+    {
+      "id": "Q07",
+      "question": "What is the limit?",
+      "type": "ambiguous",
+      "difficulty": "medium",
+      "expected_answer": "CLARIFICATION_REQUIRED",
+      "actual_answer": "The aggregate liability limit is the fees paid or payable under the applicable SOW during the 12 months preceding the claim. This cap does not apply to confidentiality breaches, indemnification obligations, or gross negligence/willful misconduct.",
+      "retrieval_hit": true,
+      "retrieval_relevance": 1.0,
+      "citation_correctness": 0.0,
+      "answer_correctness": 0,
+      "groundedness": 2,
+      "hallucination": 2,
+      "judge_reason": "Baseline ambiguity handling",
+      "latency_ms": 4931.93,
+      "total_tokens": 0,
+      "citations": [
+        {
+          "id": 1,
+          "source": "Finance\\TravelPolicy.docx",
+          "page": 0
+        },
+        {
+          "id": 2,
+          "source": "Finance\\ExpensePolicy.pdf",
+          "page": 2
+        },
+        {
+          "id": 3,
+          "source": "Legal\\VendorContract.pdf",
+          "page": 2
+        },
+        {
+          "id": 4,
+          "source": "Legal\\VendorContract.pdf",
+          "page": 2
+        },
+        {
+          "id": 5,
+          "source": "Sales\\Pricing2026.pdf",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "id": "Q08",
+      "question": "What is the company's employee pet insurance policy?",
+      "type": "no_answer",
+      "difficulty": "easy",
+      "expected_answer": "INSUFFICIENT_INFORMATION",
+      "actual_answer": "The provided benefits and leave policies do not mention an employee pet insurance benefit or policy. For clarification, contact Benefits at benefits@northwindtraders.example or 1-800-555-0199.",
+      "retrieval_hit": true,
+      "retrieval_relevance": 1.0,
+      "citation_correctness": 0.0,
+      "answer_correctness": 0,
+      "groundedness": 0,
+      "hallucination": 2,
+      "judge_reason": "Baseline missing-information handling",
+      "latency_ms": 3112.18,
+      "total_tokens": 0,
+      "citations": [
+        {
+          "id": 1,
+          "source": "HR\\Benefits.pdf",
+          "page": 1
+        },
+        {
+          "id": 2,
+          "source": "HR\\Benefits.pdf",
+          "page": 1
+        },
+        {
+          "id": 3,
+          "source": "HR\\Benefits.pdf",
+          "page": 2
+        },
+        {
+          "id": 4,
+          "source": "HR\\LeavePolicy.pdf",
+          "page": 1
+        },
+        {
+          "id": 5,
+          "source": "HR\\LeavePolicy.pdf",
+          "page": 2
+        }
+      ]
+    },
+    {
+      "id": "Q09",
+      "question": "What is the refund policy for Enterprise customers?",
+      "type": "no_answer",
+      "difficulty": "medium",
+      "expected_answer": "INSUFFICIENT_INFORMATION",
+      "actual_answer": "The provided pricing documents do not specify a refund policy for Enterprise customers. They state that Enterprise is available with monthly billing or annual prepaid billing at a 15% discount, with a standard 12-month term and cancellation requiring 30 days\u2019 written notice before renewal.",
+      "retrieval_hit": true,
+      "retrieval_relevance": 1.0,
+      "citation_correctness": 0.0,
+      "answer_correctness": 0,
+      "groundedness": 0,
+      "hallucination": 2,
+      "judge_reason": "Baseline missing-information handling",
+      "latency_ms": 3592.29,
+      "total_tokens": 0,
+      "citations": [
+        {
+          "id": 1,
+          "source": "Sales\\Pricing2026.pdf",
+          "page": 2
+        },
+        {
+          "id": 2,
+          "source": "Finance\\ExpensePolicy.pdf",
+          "page": 1
+        },
+        {
+          "id": 3,
+          "source": "Sales\\Pricing2025.pdf",
+          "page": 1
+        },
+        {
+          "id": 4,
+          "source": "Sales\\Pricing2026.pdf",
+          "page": 1
+        },
+        {
+          "id": 5,
+          "source": "Sales\\Pricing2026.pdf",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "id": "Q10",
+      "question": "What is the Enterprise pricing for 2026?",
+      "type": "follow_up",
+      "difficulty": "medium",
+      "expected_answer": "REPLACE_WITH_EXACT_ANSWER",
+      "actual_answer": "For 2026, the **Enterprise** tier is priced at **$109 per seat per month**, with a **25-seat minimum**. It includes **Dedicated CSM support with a 4-hour SLA**.",
+      "retrieval_hit": true,
+      "retrieval_relevance": 0.4,
+      "citation_correctness": 0.4,
+      "answer_correctness": 0,
+      "groundedness": 0,
+      "hallucination": 2,
+      "judge_reason": "The cited document references do not provide any content supporting the stated $109 price, 25-seat minimum, or 4-hour SLA, and the expected answer is unavailable for verification.",
+      "latency_ms": 3033.61,
+      "total_tokens": 0,
+      "citations": [
+        {
+          "id": 1,
+          "source": "Sales\\Pricing2026.pdf",
+          "page": 1
+        },
+        {
+          "id": 2,
+          "source": "Sales\\Pricing2026.pdf",
+          "page": 2
+        },
+        {
+          "id": 3,
+          "source": "Sales\\Pricing2025.pdf",
+          "page": 1
+        },
+        {
+          "id": 4,
+          "source": "Sales\\Pricing2025.pdf",
+          "page": 1
+        },
+        {
+          "id": 5,
+          "source": "Sales\\Pricing2025.pdf",
+          "page": 2
+        }
+      ]
+    },
+    {
+      "id": "Q11",
+      "question": "What about Standard?",
+      "type": "follow_up",
+      "difficulty": "medium",
+      "expected_answer": "REPLACE_WITH_EXACT_STANDARD_PRICING",
+      "actual_answer": "There is no **\u201cStandard\u201d** tier listed in the 2025 or 2026 OrbitSuite rate cards. The available tiers are:\n\n- **Starter**\n- **Professional**\n- **Enterprise**\n- **Enterprise Plus** (introduced in 2026)\n\nYou may be referring to the **Starter** tier or to standard list pricing.",
+      "retrieval_hit": true,
+      "retrieval_relevance": 0.4,
+      "citation_correctness": 0.4,
+      "answer_correctness": 0,
+      "groundedness": 0,
+      "hallucination": 2,
+      "judge_reason": "Invalid judge response",
+      "latency_ms": 3766.47,
+      "total_tokens": 0,
+      "citations": [
+        {
+          "id": 1,
+          "source": "Sales\\Pricing2026.pdf",
+          "page": 1
+        },
+        {
+          "id": 2,
+          "source": "Sales\\Pricing2026.pdf",
+          "page": 1
+        },
+        {
+          "id": 3,
+          "source": "Finance\\TravelPolicy.docx",
+          "page": 0
+        },
+        {
+          "id": 4,
+          "source": "Sales\\Pricing2025.pdf",
+          "page": 1
+        },
+        {
+          "id": 5,
+          "source": "Sales\\Pricing2025.pdf",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "id": "Q12",
+      "question": "What is the pricing difference?",
+      "type": "follow_up",
+      "difficulty": "hard",
+      "expected_answer": "REPLACE_WITH_EXACT_COMPARISON",
+      "actual_answer": "### OrbitSuite pricing changes from 2025 to 2026\n\n| Tier | 2025 | 2026 | Difference |\n|---|---:|---:|---:|\n| Starter | $29/seat/month | $32 | **+$3** (+10.3%) |\n| Professional | $59 | $65 | **+$6** (+10.2%) |\n| Enterprise | $99 | $109 | **+$10** (+10.1%) |\n| Enterprise Plus | Not offered | $145 | **New tier** |\n\n### Add-on changes\n\n| Add-on | 2025 | 2026 | Difference |\n|---|---:|---:|---:|\n| Advanced Analytics | $12/seat/month | $14 | **+$2** |\n| Premium Integrations Pack | $8/seat/month | $9 | **+$1** |\n| Additional sandbox | $250/month | $275/month | **+$25** |\n| Onboarding & implementation | Starting at $4,000 | Starting at $4,500 | **+$500** |\n\nThe onboarding package is now available for **Enterprise and Enterprise Plus**, rather than Enterprise only.\n\nOther pricing-related changes:\n\n- Annual prepaid contracts still receive a **15% discount**.\n- **Enterprise Plus requires annual prepaid billing**; all other tiers support monthly billing.\n- Minimum seats remain 5, 10, and 25 for Starter, Professional, and Enterprise. Enterprise Plus requires **100 seats**.\n- Customers on active 2025 contracts retain their existing rates until their current renewal date.",
+      "retrieval_hit": true,
+      "retrieval_relevance": 1.0,
+      "citation_correctness": 1.0,
+      "answer_correctness": 0,
+      "groundedness": 0,
+      "hallucination": 2,
+      "judge_reason": "Invalid judge response",
+      "latency_ms": 9301.05,
+      "total_tokens": 0,
+      "citations": [
+        {
+          "id": 1,
+          "source": "Sales\\Pricing2026.pdf",
+          "page": 2
+        },
+        {
+          "id": 2,
+          "source": "Sales\\Pricing2025.pdf",
+          "page": 1
+        },
+        {
+          "id": 3,
+          "source": "Sales\\Pricing2026.pdf",
+          "page": 1
+        },
+        {
+          "id": 4,
+          "source": "Sales\\Pricing2025.pdf",
+          "page": 1
+        },
+        {
+          "id": 5,
+          "source": "Sales\\Pricing2026.pdf",
+          "page": 1
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,171 @@
+[
+  {
+    "id": "Q01",
+    "question": "What is the Enterprise pricing for 2026?",
+    "type": "straightforward",
+    "expected_answer": "REPLACE_WITH_EXACT_ANSWER_FROM_PRICING2026",
+    "expected_documents": [
+      "Pricing2026.pdf"
+    ],
+    "expected_sections": [],
+    "difficulty": "easy",
+    "conversation": []
+  },
+  {
+    "id": "Q02",
+    "question": "What is the Standard pricing for 2026?",
+    "type": "straightforward",
+    "expected_answer": "REPLACE_WITH_EXACT_ANSWER_FROM_PRICING2026",
+    "expected_documents": [
+      "Pricing2026.pdf"
+    ],
+    "expected_sections": [],
+    "difficulty": "easy",
+    "conversation": []
+  },
+  {
+    "id": "Q03",
+    "question": "What discounts are available?",
+    "type": "straightforward",
+    "expected_answer": "REPLACE_WITH_EXACT_ANSWER_FROM_DISCOUNTS",
+    "expected_documents": [
+      "Discounts.xlsx"
+    ],
+    "expected_sections": [],
+    "difficulty": "easy",
+    "conversation": []
+  },
+  {
+    "id": "Q04",
+    "question": "Compare Enterprise pricing between 2025 and 2026.",
+    "type": "multi-document",
+    "expected_answer": "REPLACE_WITH_EXACT_COMPARISON_FROM_BOTH_DOCUMENTS",
+    "expected_documents": [
+      "Pricing2025.pdf",
+      "Pricing2026.pdf"
+    ],
+    "expected_sections": [],
+    "difficulty": "medium",
+    "conversation": []
+  },
+  {
+    "id": "Q05",
+    "question": "How did Standard pricing change from 2025 to 2026?",
+    "type": "multi-document",
+    "expected_answer": "REPLACE_WITH_EXACT_COMPARISON",
+    "expected_documents": [
+      "Pricing2025.pdf",
+      "Pricing2026.pdf"
+    ],
+    "expected_sections": [],
+    "difficulty": "medium",
+    "conversation": []
+  },
+  {
+    "id": "Q06",
+    "question": "Compare the available discounts with the 2026 Enterprise pricing.",
+    "type": "multi-document",
+    "expected_answer": "REPLACE_WITH_EXACT_ANSWER",
+    "expected_documents": [
+      "Discounts.xlsx",
+      "Pricing2026.pdf"
+    ],
+    "expected_sections": [],
+    "difficulty": "hard",
+    "conversation": []
+  },
+  {
+    "id": "Q07",
+    "question": "What is the limit?",
+    "type": "ambiguous",
+    "expected_answer": "CLARIFICATION_REQUIRED",
+    "expected_documents": [],
+    "expected_sections": [],
+    "difficulty": "medium",
+    "conversation": []
+  },
+  {
+    "id": "Q08",
+    "question": "What is the company's employee pet insurance policy?",
+    "type": "no_answer",
+    "expected_answer": "INSUFFICIENT_INFORMATION",
+    "expected_documents": [],
+    "expected_sections": [],
+    "difficulty": "easy",
+    "conversation": []
+  },
+  {
+    "id": "Q09",
+    "question": "What is the refund policy for Enterprise customers?",
+    "type": "no_answer",
+    "expected_answer": "INSUFFICIENT_INFORMATION",
+    "expected_documents": [],
+    "expected_sections": [],
+    "difficulty": "medium",
+    "conversation": []
+  },
+  {
+    "id": "Q10",
+    "question": "What is the Enterprise pricing for 2026?",
+    "type": "follow_up",
+    "expected_answer": "REPLACE_WITH_EXACT_ANSWER",
+    "expected_documents": [
+      "Pricing2026.pdf"
+    ],
+    "expected_sections": [],
+    "difficulty": "medium",
+    "conversation": [
+      {
+        "role": "user",
+        "content": "Tell me about the pricing plans."
+      },
+      {
+        "role": "assistant",
+        "content": "The company has multiple pricing plans."
+      }
+    ]
+  },
+  {
+    "id": "Q11",
+    "question": "What about Standard?",
+    "type": "follow_up",
+    "expected_answer": "REPLACE_WITH_EXACT_STANDARD_PRICING",
+    "expected_documents": [
+      "Pricing2026.pdf"
+    ],
+    "expected_sections": [],
+    "difficulty": "medium",
+    "conversation": [
+      {
+        "role": "user",
+        "content": "What is the Enterprise pricing for 2026?"
+      },
+      {
+        "role": "assistant",
+        "content": "Enterprise pricing information is available."
+      }
+    ]
+  },
+  {
+    "id": "Q12",
+    "question": "What is the pricing difference?",
+    "type": "follow_up",
+    "expected_answer": "REPLACE_WITH_EXACT_COMPARISON",
+    "expected_documents": [
+      "Pricing2025.pdf",
+      "Pricing2026.pdf"
+    ],
+    "expected_sections": [],
+    "difficulty": "hard",
+    "conversation": [
+      {
+        "role": "user",
+        "content": "Compare Enterprise pricing between 2025 and 2026."
+      },
+      {
+        "role": "assistant",
+        "content": "The pricing differs between the two years."
+      }
+    ]
+  }
+]
